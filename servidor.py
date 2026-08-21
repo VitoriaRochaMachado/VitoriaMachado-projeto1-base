@@ -22,7 +22,7 @@ def submit_form():
 
 @app.errorhandler(404)
 def page_not_found(error):
-    return views.not_found()
+    return views.not_found(error)
 
 if __name__ == '__main__':
     app.run(debug=True)

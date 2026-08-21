@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Get-it</title>
+<link rel="stylesheet" href="/static/getit.css">
 </head>
 <body>
 
-<img src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}">
+<img src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}" class="responsiva" alt="Foto Responsiva">
 <p>Como o Post-it, mas com outro verbo</p>
   <form action="/submit" method="POST">
     <label for="titulo">Título</label>
